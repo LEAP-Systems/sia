@@ -45,8 +45,8 @@ done
 # set positional arguments in their proper place
 eval set -- "$PARAMS"
 
-printf "%b" "${OKB}Swarm Intelligent Agents Demo\n
-=============================\n
+printf "%b" "${OKB}Swarm Intelligent Agents Demo
+=============================
 Copyright © 2021 LEAP Systems. All Rights Reserved.\n${NC}"
 
 python3 -m sia "$SAMPLES" "$RANGE"

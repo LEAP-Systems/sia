@@ -2,7 +2,8 @@
 
 ![img](/docs/img/LEAP_INS.png)
 
-Modified: 20211-03
+Modified: 2021-03
+
 [leapsystems.online](http://leapsystems.online)
 
 ## Quickstart
