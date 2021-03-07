@@ -1,0 +1,30 @@
+# Logging Configuration
+# -------------------------
+# Copyright © 20211 LEAP. All Rights Reserved.
+
+version: 1
+disable_existing_loggers: True
+loggers:
+  # default logger for unregistered modules
+  '':
+    level: INFO
+    handlers: [ console_handler ]
+
+handlers:
+  default_handler:
+    class: logging.FileHandler
+    filename: sia/logs/sia.log
+    level: DEBUG
+    formatter: default
+
+  console_handler:
+    class: logging.StreamHandler
+    level: DEBUG
+    formatter: default
+
+formatters:
+  default:
+    format: '%(asctime)s - %(threadName)s - %(name)s - %(lineno)d - %(levelname)s : %(message)s'
+
+  simple:
+    format: '%(asctime)s - %(levelname)s : %(message)s'
